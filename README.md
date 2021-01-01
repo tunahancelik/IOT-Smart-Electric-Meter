@@ -14,7 +14,7 @@ Ev kullanıcıları için IOT dersi kapsamında geliştirilen mobil uygulama. Ko
 
 - [Giriş](#giriş)
 - [Özellikler](#özellikler)
-- [Geri Bildirim](#geri-bildirim)
+- [Feedback](#feedback)
 
 
 
