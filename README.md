@@ -32,18 +32,16 @@ Kocaeli Üniversitesi Nesnelerin İnterneti(IOT) dersi kapsamında akıllı saya
   <img src = "https://i.hizliresim.com/Id17gf.png" width=350>
 </p>
 
-## Features
+## Özellikler
 
-A few of the things you can do with Yks Rehber:
+SAYACIM. ile yapabileceğiz bazı özellikler
 
 
-* In the remaining time of the exam
-* Calculate your score for the exam
-* Get updated information
-* Stay strong with motivational words
-* Add widgets to your homepage
+* Günlük Toplam Kullanım Bilginizi Görebilirsiniz
+* Aylık Ödemelerinizi Görüntüleyebilirsiniz
+* Aylık Verilerinizi Görüntüleyebilirsiniz
+* Günlük Kullanım Liminitizi Takip Edebilirsiniz
 
-The codes of application belong to version 2.5. Photos belong to version 5.1!:
 
 
 <p align="center">
