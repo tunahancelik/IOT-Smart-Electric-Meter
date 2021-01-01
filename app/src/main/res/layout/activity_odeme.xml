@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.OdemeActivity"
+    android:orientation="vertical"
+    android:layout_weight="6"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tüm Ödemeler,"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.04"
+            android:text="ÖDEMELERİM."
+            android:textColor="#fff"
+            android:textSize="32sp"
+            app:fontFamily="@font/baloo" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_power_24"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <LinearLayout
+
+            android:id="@+id/ust"
+            android:layout_width="385dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_view"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="50dp"
+                android:text="Toplam Ödenen"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                app:fontFamily="@font/comfortaa_bold" />
+
+            <TextView
+                android:id="@+id/toplamOdeme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="25dp"
+                android:paddingTop="10dp"
+                android:text="yükleniyor"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/baloo"/>
+
+        </LinearLayout>
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/ust">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:weightSum="1">
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/cardOcak"
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:text="O"
+                           app:fontFamily="@font/baloo"
+                           android:textColor="#6F98FF"
+                           android:textSize="38sp" />
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:orientation="vertical"
+                           android:weightSum="2">
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:gravity="center"
+                               android:text="OCAK"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp" />
+
+                           <TextView
+                               android:id="@+id/ocakText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:gravity="center"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp" />
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="Ş"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="ŞUBAT"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/subatText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="M"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="MART"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/martText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="N"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="NİSAN"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/nisanText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="M"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="MAYIS"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/mayisText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="H"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="HAZİRAN"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/haziranText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="T"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="TEMMUZ"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/temmuzText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="Temmuz"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="A"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="AĞUSTOS"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/agostosText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="OCAK"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="E"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="EYLÜL"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/eylulText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="OCAK"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="E"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="EKİM"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/ekimText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="OCAK"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="K"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="KASIM"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/kasimText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:fontFamily="@font/comfortaa"
+                               android:text="OCAK"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="8dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="4">
+                       <TextView
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="A"
+                           app:fontFamily="@font/baloo"
+                           android:textSize="38sp"
+                           android:textColor="#6F98FF"
+                           android:gravity="center"/>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:weightSum="2"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:text="ARALIK"
+                               android:fontFamily="@font/comfortaa"
+                               android:textColor="#3BEEEA"
+                               android:textSize="22sp"
+                               android:gravity="center"
+                               android:layout_weight="1"/>
+                           <TextView
+                               android:id="@+id/aralikText"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:text="yükleniyor"
+                               android:fontFamily="@font/comfortaa"
+                               android:textSize="22sp"
+                               android:gravity="center"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+           </LinearLayout>
+       </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
