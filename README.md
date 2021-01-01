@@ -20,7 +20,7 @@ Ev kullanıcıları için IOT dersi kapsamında geliştirilen mobil uygulama. Ko
 
 ## Giriş
 
-![Kotlin Badge](https://img.shields.io/badge/-JAVA-1572B6?style=flat&logo=kotlin&logoColor=white)
+![Kotlin Badge](https://img.shields.io/badge/-Kotlin-1572B6?style=flat&logo=kotlin&logoColor=white)
 ![Android Badge](https://img.shields.io/badge/-Android-3DDC84?style=flat&logo=android&logoColor=white)
 ![Intellij Badge](https://img.shields.io/badge/-JetBrains-38B2AC?style=flat&logo=jetbrains&logoColor=white)
 
